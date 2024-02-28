@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>MediScan</title>
+</head>
+<body>
+    <nav class="navbar" style="margin-bottom: 500px;">
+        <img src="patente.png" alt="Logo" class="logo">
+        <h1 class="title">MediScan de María José.
+            <br>
+            ¡Explorando tu Salud Digital!
+            <br>
+            <br> 
+        </h1>
+    </nav>
+   
+
+    <div class="container" style="margin-top: 300px;">
+
+        <div class="instructions">
+            <h1>¡Tu generador de códigos QR!</h1>
+            <ul>
+                <li><strong>Paso 1. </strong> Introduce la URL.</li>
+                <li><strong>Paso 2. </strong> Pulsa el botón "Generar QR".</li>
+                <li><strong>Paso 3. </strong> Descárgalo.</li>
+            </ul>
+        </div>
+        
+        <input style="border-radius: 20px; font-size: 22px;" type="text" id="input-text" placeholder="Escribe tu pdf o una URL...">
+        <div class="btn-group">
+            <button class="btn-generate" id="btn-generate" style="border-radius: 20px;font-size: 24px;">¡Genera tu QR!</button>
+            <button class="btn-clear" id="btn-clear" style="border-radius: 20px;font-size: 24px;">¡Limpiar!</button>
+        </div>
+        <div class="qrcode" id="qrcode"></div>
+        <!-- Botón de descarga -->
+        <button class="btn-download" id="btn-download" 
+            style= "display: none; border-radius: 20px; font-size:                  
+            24px; margin-top: 30px;">    
+            ¡Descarga tu QR aquí!</button>
+    </div>
+    
+
+    <!--Scripts library QRcode.js-->
+    <script src="qrcode.min.js"></script>
+
+
+
+
+    <!--Scrpts Index.js-->
+    <script src="index.js"></script>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Variables CSS */
+:root {
+    --white: #fff;
+    --blue: #0834d1;
+    --hover-blue: #0064f7;
+    --very-dark-blue: #0f0c29;
+    --gray: #ada9bb;
+    --hover-gray: #797585;
+    --font: 'Raleway', sans-serif;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+/* Body */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 700px;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+    margin-top: -70px;
+}
+
+.title {
+    margin: 0;
+    font-size: 40px;
+}
+
+/* instrucciones de uso y generador*/
+
+.instructions {
+    color: #000000;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    z-index: 2; /* Aumenta el valor del z-index */
+    margin-bottom: 50px;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.instructions h1 {
+    font-size: 24px;
+}
+
+.instructions ul {
+    list-style: none;
+    padding: 0;
+}
+
+.instructions li {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e );
+}
+
+
+
+/* Container */
+.container {
+    max-width: 500px;
+    width: 90%; /* Cambiamos el ancho a un porcentaje */
+    margin: 80px auto;
+    height: auto;
+    margin: 80px auto;
+    
+    padding: 25px;
+    position: relative;
+    text-align: center;
+    background: var(--white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .qrcode {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /* Cambiamos a column para que los elementos se generen hacia abajo */
+    align-items: center;
+
+}
+
+
+.container h1 {
+    font-size: 2em;
+    color: var(--very-dark-blue);
+    margin-bottom: 20px;
+}
+
+.container input {
+    border: none;
+    background: #c2c2c2;
+    padding: 10px;
+    border-radius:  5px;
+    outline: none;
+    margin-bottom: 10px;
+
+}
+
+.container .btn-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.container .btn-group button {
+    width: 100%;
+    padding: 10px 20px;
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+
+
+
+
+/*Boton de crear o generar codigo QR*/
+.container .btn-group .btn-generate {
+    background: var(--blue);
+
+}
+
+.container .btn-group .btn-generate:hover {
+    background: var(--hover-blue);
+}
+
+/*Boton de limpiar codigo QR*/
+.container .btn-group .btn-clear {
+    background: var(--gray);
+
+}
+
+.container .btn-group .btn-clear:hover {
+    background: var(--hover-gray);
+}
+
+.btn-download {
+    border-radius: 20px;
+    font-size: 24px;
+    margin-top: 10px;
+    background-color: var(--gray); /* Color de fondo normal */
+    color: var(--white); /* Color del texto normal */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+}
+
+.btn-download:hover {
+    background-color: var(--hover-gray); /* Color de fondo al pasar el ratón */
+    /*color: var(--blue);  Color del texto al pasar el ratón */
+}
